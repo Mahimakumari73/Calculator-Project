@@ -1,0 +1,23 @@
+*{
+    margin:0;
+    padding:0;
+}
+.Look{
+   color:#fff;
+   background-color: rgba(216, 112, 214, 0.801);
+   height:auto;
+   width: 230px;
+   padding:10px;
+   text-align:center;
+   margin:auto;
+}
+.btn{
+    height : auto;
+}
+body {
+    padding: 25px;
+    background-color: white;
+    color: black;
+    font-size: 25px;
+  }
+  

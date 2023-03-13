@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!-- saved from url=(0044)http://127.0.0.1:5500/MINIPROJECT/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Project</title>
+    <link href="./Calculator Project_files/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./Calculator Project_files/index.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <form action="http://127.0.0.1:5500/MINIPROJECT/index.html#" name="Calculator" class="Look">
+                    <input type="text" class="display form-control" name="display" id="display"><br><br>
+                    <input type="button" class="btn btn-info ml-3" value="C" id="delete">&nbsp;&nbsp;
+                    <input type="button" class="btn btn-info ml-3" value="&lt;-" onclick="backspace()">&nbsp;&nbsp;
+                    <input type="button" class=" btn btn-info ml-3" value="+" onclick="document.Calculator.display.value+=&#39;+&#39; ">&nbsp;&nbsp;
+                    <input type="button" class="btn btn-info ml-3" value="/" onclick="document.Calculator.display.value+=&#39;/&#39; "><br><br>
+                    <input type="button" class="btn btn-secondary ml-3" value="7" onclick="seven()">&nbsp;&nbsp;
+                    <input type="button" class="btn btn-secondary ml-3" value="8" onclick="eight()">&nbsp;&nbsp;
+                    <input type="button" class="btn btn-secondary ml-3" value="9" onclick="nine()">&nbsp;&nbsp;
+                    <input type="button" class="btn btn-info ml-3" value="*" onclick="document.Calculator.display.value+=&#39;*&#39; "><br><br>
+                    <input type="button" class="btn btn-secondary ml-3" value="4" onclick="four()">&nbsp;&nbsp;
+                    <input type="button" class="btn btn-secondary ml-3" value="5" onclick="five()">&nbsp;&nbsp;
+                    <input type="button" class="btn btn-secondary ml-3" value="6" onclick="six()">&nbsp;&nbsp;
+                    <input type="button" class="btn btn-info ml-3" value="-" onclick="document.Calculator.display.value+=&#39;-&#39; "><br><br>
+                    <input type="button" class="btn btn-secondary ml-3" value="1" onclick="one()">&nbsp;&nbsp;
+                    <input type="button" class="btn btn-secondary ml-3" value="2" onclick="two()">&nbsp;&nbsp;
+                    <input type="button" class="btn btn-secondary ml-3" value="3" onclick="three()">&nbsp;&nbsp;
+                    <input type="button" class=" btn btn-info ml-3" value="00" onclick="document.Calculator.display.value+=&#39;00&#39; "><br><br>
+                    <input type="button" class="btn btn-secondary ml-3" value="%" onclick="document.Calculator.display.value+=&#39;%&#39; ">&nbsp;&nbsp;
+                    <input type="button" class="btn btn-secondary ml-3" value="0" onclick="zero()">&nbsp;&nbsp;
+                    <input type="button" class="btn btn-secondary ml-3" value=".">&nbsp;&nbsp;
+                    <input type="button" class="btn btn-primary ml-3" value="=" onclick="document.Calculator.display.value+=&#39;=&#39; ">
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="./Calculator Project_files/index.js.download"></script>
+    <script src="./Calculator Project_files/bootstrap.bundle.min.js.download" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="./Calculator Project_files/popper.min.js.download" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="./Calculator Project_files/bootstrap.min.js.download" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
