@@ -106,12 +106,4 @@ const point = () =>{
         document.querySelector("#display").value= document.querySelector("#display").value + ".";
     }
 }
-const sqrt = () =>{
-    if(document.querySelector("#display").value == " "){
-        document.querySelector("#display").value="√";
-    }
-    else{
-        document.querySelector("#display").value= document.querySelector("#display").value+ "√";
-    }
-}
 
