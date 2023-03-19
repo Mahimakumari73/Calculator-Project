@@ -1,23 +1,28 @@
 *{
     margin:0;
     padding:0;
+    box-sizing: border-box;
 }
 .Look{
    color:#fff;
-   background-color: rgba(216, 112, 214, 0.801);
    height:auto;
    width: 230px;
    padding:10px;
+   background-color: #e6e8fa ;
    text-align:center;
    margin:auto;
+   border:10px solid rebeccapurple;
+   border-image-slice: 1;
+   border-image-source: 
+   linear-gradient(to bottom left, rgb(255, 192, 251) ,rgba(0, 0, 255, 0.24) );
 }
 .btn{
     height : auto;
 }
 body {
-    padding: 25px;
-    background-color: white;
-    color: black;
-    font-size: 25px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
   }
-  
